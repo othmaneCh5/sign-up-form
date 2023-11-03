@@ -16,7 +16,7 @@ body{
 /* dividing the body into two boxes */
 #image_side{
     flex: 2 0 auto;
-    height: 1210px;
+    height: 1150px;
     
     display: flex;
     background-image: url('2713606_383070-PCEZT1-903.jpg');
@@ -27,9 +27,9 @@ body{
     flex: 0 0 auto;
     display: flex;
     flex-direction: column;
-    height: 1210px;
+    height: 1150px;
     
-    gap: 5px;
+
     background-color: rgb(250, 250, 215);
 }
 /* creating a box inside the image_side box for the logo */
@@ -49,9 +49,10 @@ body{
 }
 #form_space{
     flex: 0 0 auto;
-     
+    position: relative;
+    bottom: 50px;
     height: 610px; 
-    margin: 70px;
+    margin: 30px;
     background-color: rgb(250, 250, 215);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -72,24 +73,24 @@ p{
     margin: 30px;
     position: relative;
     left: 10px; 
-    font-size: 50px;
+    font-size: 35px;
     padding-left: 0px;
     font-family: myFirstfont;
 }
 /* setting the position and size of the forms */
 #form2{
-    font-size: 60px;
+    font-size: 50px;
     position: relative;
-    left: 820px; bottom: 290px;
+    left: 570px; bottom: 230px;
 }
 #form1{
-    font-size: 60px;
+    font-size: 50px;
     position: relative;
     top: 120px; left: 60px;
 }
 /* setting the size of the input fields */
 input{
-    font-size: 50px;
+    font-size: 35px;
 }
 /* setting the style and size of the buttons */
 button{
@@ -98,7 +99,7 @@ button{
     background-color: yellowgreen;
     margin: 20px;
     position: relative;
-    top: 70px; right: 900px;
+    top: 130px; right: 600px;
 }
 /* setting validation style */
 input:invalid {
