@@ -1,114 +1,112 @@
-/*setting the body to flex and it's margin to 0*/
 body{
+    width: 1844px;
+    height: 970px;
     margin: 0%;
-    display: flex;
-    gap: 5px;
-}
-/* adding downloaded fonts */
-@font-face {
-    font-family: myFirstfont;
-    src: url('EduTASBeginner-VariableFont_wght.ttf');
+    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(7,1fr);
 }
 @font-face {
-    font-family: mySecondfont;
-    src: url('Savor\ Fall.ttf');
+    font-family: myfont;
+    src: url('assets/Poppins-Light.ttf');
 }
-/* dividing the body into two boxes */
-#image_side{
-    flex: 2 0 auto;
-    height: 1150px;
+#container{
+    grid-area: 2/2/7/7;
     
-    display: flex;
-    background-image: url('2713606_383070-PCEZT1-903.jpg');
-    background-repeat: no-repeat;
-    background-size: 900px 1300px;
-}
-#form_side{
-    flex: 0 0 auto;
-    display: flex;
-    flex-direction: column;
-    height: 1150px;
-    
-
-    background-color: rgb(250, 250, 215);
-}
-/* creating a box inside the image_side box for the logo */
-#logo_space{
-    flex: 1 0 auto;
-    height: 300px;
-   
-    margin-top: 130px;
-    background-color: rgb(128, 128, 128,0.5);
-}
-/* divising the form side into two boxes */
-#heade{
-    flex: 0 1 auto;
-   
-    height: 303px;
-    
-}
-#form_space{
-    flex: 0 0 auto;
-    position: relative;
-    bottom: 50px;
-    height: 610px; 
-    margin: 30px;
-    background-color: rgb(250, 250, 215);
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-/* setting the dimensions of the logo */
-#logo{
-    height: 300px;
-    width: 300px;
+#form-side{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: white;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
 }
-/* setting the dimensions and the position of the title accompagning the logo */
-#title{
-    font-size: 110px;
-    position: relative;
-    left: 300px; bottom: 360px;
-    font-family: myFirstfont;
-}
-/* setting the position and style of the text in the head */
-p{
-    margin: 30px;
-    position: relative;
-    left: 10px; 
-    font-size: 35px;
-    padding-left: 0px;
-    font-family: myFirstfont;
-}
-/* setting the position and size of the forms */
-#form2{
-    font-size: 50px;
-    position: relative;
-    left: 570px; bottom: 230px;
-}
-#form1{
-    font-size: 50px;
-    position: relative;
-    top: 120px; left: 60px;
-}
-/* setting the size of the input fields */
-input{
-    font-size: 35px;
-}
-/* setting the style and size of the buttons */
-button{
-    font-size: 80px;
-    border-radius: 16px;
-    background-color: yellowgreen;
-    margin: 20px;
-    position: relative;
-    top: 130px; right: 600px;
-}
-/* setting validation style */
-input:invalid {
-    border: 4px solid red;
-    border-radius: 15px;
-  }
-  
-input:valid {
-    border: 4px solid green;
-    border-radius: 15px;
+#image-side{
+    grid-column-start: 2;
+    grid-column-end: 3;
     
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+img{
+    position: absolute;
+    width: 659px;
+    height:692px ;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+input{
+    margin: 10px;
+    border-radius: 15px;
+}
+input:invalid{
+    border: 3px solid red;
+}
+input:valid{
+    border: 3px solid green;
+}
+#first_name{
+    font-size: 35px;
+    width: 275px;
+    position: relative;
+    left: 10px; top: 20px;
+}
+#last_name{
+    font-size: 35px;
+    width: 275px;
+    position: relative;
+    left: 300px; bottom: 45px;
+}
+#age{
+    font-size: 35px;
+    width: 100px;
+    position: relative;
+    left: 10px; bottom: 37px;
+}
+#email{
+    font-size: 35px;
+    width: 450px;
+    position: relative;
+    left: -5px; bottom: 37px;
+}
+#password{
+    font-size: 35px;
+    width: 275px;
+    position: relative;
+    bottom: 30px; left: 10px;
+   
+}
+#confirm_password{
+    font-size: 35px;
+    width: 275px;
+    position: relative;
+    left: 300px; bottom: 95px;
+}
+button{
+    font-size: 45px;
+    position: relative;
+    right: 290px;
+    border-radius: 15px;
+    color: white;
+    background-color: #c6a200e1;
+}
+#reset{
+    position: relative;
+    left: -245px;
+}
+form{
+    position: relative;
+    bottom: 25px;
+}
+#text{
+    font-size: 75px;
+    font-family: myfont; 
+    position: relative;
+    left: 150px;
+    color: #c6a200e1;
 }
