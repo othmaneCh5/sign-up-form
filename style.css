@@ -1,30 +1,34 @@
 body{
-    width: 1844px;
-    height: 970px;
+    width: 1275px;
+    height: 590px;
     margin: 0%;
-    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%); 
     display: grid;
-    grid-template-columns: repeat(7,1fr);
+    grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(7,1fr);
+   overflow: hidden;
+
+    
 }
 @font-face {
     font-family: myfont;
     src: url('assets/Poppins-Light.ttf');
 }
 #container{
-    grid-area: 2/2/7/7;
+    grid-area: 2/3/7/11;
     
     border-radius: 15px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
 }
-#form-side{
+ #form-side{
     grid-column-start: 1;
     grid-column-end: 2;
     background-color: white;
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
+    
 }
 #image-side{
     grid-column-start: 2;
@@ -32,81 +36,65 @@ body{
     
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-}
+} 
 img{
     position: absolute;
-    width: 659px;
-    height:692px ;
+    width: 425px;
+    height:422px ;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 }
+form{
+    position: relative;
+     left: 20px;
+}
+p{
+    position: relative;
+    top: 190px;
+}
+#last_name{
+    position: relative;
+    left:195px; bottom: 30px;
+}
+button{
+    position: relative;
+    top:60px; right: 170px;
+    font-size: 20px;
+    
+    background-color: rgb(220, 215, 215);
+   
+}
+#email{
+    position: relative;
+    left: 8px; 
+    width: 310px;
+}
+#confirm_password{
+    position: relative;
+    left: 195px; bottom: 15px;
+}
+#password{
+    position: relative;
+    top: 20px;
+}
 input{
-    margin: 10px;
     border-radius: 15px;
+    font-size: 15px;
+    height:25px ;
+}
+#age{
+    width: 50px;
+}
+h3{
+    font-size: 50px;
+    position: relative;
+    left: 120px;
+    color: orange;
+    font-family: myfont;
 }
 input:invalid{
     border: 3px solid red;
 }
 input:valid{
     border: 3px solid green;
-}
-#first_name{
-    font-size: 35px;
-    width: 275px;
-    position: relative;
-    left: 10px; top: 20px;
-}
-#last_name{
-    font-size: 35px;
-    width: 275px;
-    position: relative;
-    left: 300px; bottom: 45px;
-}
-#age{
-    font-size: 35px;
-    width: 100px;
-    position: relative;
-    left: 10px; bottom: 37px;
-}
-#email{
-    font-size: 35px;
-    width: 450px;
-    position: relative;
-    left: -5px; bottom: 37px;
-}
-#password{
-    font-size: 35px;
-    width: 275px;
-    position: relative;
-    bottom: 30px; left: 10px;
-   
-}
-#confirm_password{
-    font-size: 35px;
-    width: 275px;
-    position: relative;
-    left: 300px; bottom: 95px;
-}
-button{
-    font-size: 45px;
-    position: relative;
-    right: 290px;
-    border-radius: 15px;
-    color: white;
-    background-color: #c6a200e1;
-}
-#reset{
-    position: relative;
-    left: -245px;
-}
-form{
-    position: relative;
-    bottom: 25px;
-}
-#text{
-    font-size: 75px;
-    font-family: myfont; 
-    position: relative;
-    left: 150px;
-    color: #c6a200e1;
 }
