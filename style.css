@@ -50,7 +50,7 @@ form{
 }
 p{
     position: relative;
-    top: 190px;
+    top: 37px; right: -20px; 
 }
 #last_name{
     position: relative;
@@ -58,7 +58,7 @@ p{
 }
 button{
     position: relative;
-    top:60px; right: 170px;
+    top: 35px; right: 190px;
     font-size: 20px;
     
     background-color: rgb(220, 215, 215);
